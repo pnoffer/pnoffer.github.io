@@ -35,6 +35,7 @@
     <!-- WEB FONTS -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600%7CRaleway:100,300,600,700,800" rel="stylesheet" type="text/css" />    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="forms/enquiry.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="body-inner">
@@ -217,7 +218,7 @@ Development, Design, Operation and Maintenance.</p>
 				</div>
 				<div class="col-lg-5 background-colored text-light p-20">
 					<div class="text-medium">MAKE APPOINTMENT</div>
-					<form class="widget-contact-form" method="post" id="enquirenow">
+					<form id="submit-form" action="" >
 						<div class="form-group">
 							<label for="name">Name</label>
 							<input type="text" aria-required="true" name="myname" id="myname" class="form-control" placeholder="Enter your Name*" required>
@@ -246,6 +247,29 @@ Development, Design, Operation and Maintenance.</p>
                                 <div id="loadingimage" class="loadingfile" style="display:none;"></div>
                             </center>
                         </div>
+
+
+						<script>
+							$("#submit-form").submit((e)=>{
+							e.preventDefault()
+							$.ajax({
+							url:"https://script.google.com/macros/s/AKfycbwE41D00_MQX0bpcvPTy2WLeMWz32asEfM7vLzuDZpMcEDqRkBVT8Mtow/exec",
+							data:$("#submit-form").serialize(),
+							method:"post",
+							success:function (response){
+							alert("Form submitted successfully")
+							window.location.reload()
+							//window.location.href="https://google.com"
+							},
+							error:function (err){
+							alert("Something Error")
+							
+							}
+							})
+							})
+							</script>
+
+
 					</form>
 				</div>
 			</div>
