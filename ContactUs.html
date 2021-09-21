@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+<html ng-app="ContactUsViewModule">
+<head >
+    <meta charset="utf-8">
+    <title>OFFER IN ABUDHABI</title>
+    <meta name="description" content="OFFER IN ABUDHABI UAE"/>
+    <meta itemprop="name" content="Contact Us | OFFER IN ABUDHABI"/>
+    <meta itemprop="description" content="OFFER IN ABUDHABI UAE"/>
+    <meta itemprop="url" content="ContactUs.html"/>
+    <link rel="canonical" href="ContactUs.html"/>
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Contact Us | OFFER IN ABUDHABI"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="ContactUs.html"/>
+    <meta property="og:image" content="img/icon/logo.PNG"/>
+    <meta property="og:site_name" content="OFFER IN ABUDHABI UAE"/>
+    <meta property="og:description" content="OFFER IN ABUDHABI UAE is here for you. Contact us for Appointments & General Enquiries."/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/icon/logo.PNG" />
+    <!-- For iPhone 4 Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icon/logo.PNG">
+    <!-- For iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icon/logo.PNG">
+    <!-- For iPhone: -->
+    <link rel="apple-touch-icon-precomposed" href="img/icon/logo.PNG">
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/revolution-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Responsive -->
+    
+    
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <script src="js/sweetalert.min.js"></script>
+    <link href="css/sweetalert.css" rel="stylesheet" />
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/FieldValidation.js"></script>
+    <style type="text/css">
+        .TextBoxValidate {
+            border-color: red !important;
+        }
+
+        .SelectBoxValidate {
+            background: none repeat scroll 0 0 #F8FDFD;
+            border: 1px solid #ff0000 !important;
+            color: #6B6B6B;
+            font-size: 13px;
+        }
+    </style>
+    <script type="text/javascript">
+        function Success() {
+            swal("Success!", "Your Response have been recived", "success")
+        }
+
+        function validatePage() {
+
+            $("#DivErrorMsg").html("");
+            $("#DivErrorMsg").css('display', 'block')
+            var Name = isNotEmpty("txtName", "TextBox", "", "TextBoxValidate");
+            var Email = isNotEmpty("CNT_txtEmail", "TextBox", "", "TextBoxValidate")
+            var Message = isNotEmpty("txtMessage", "TextBox", "", "TextBoxValidate")
+            if (!(Name && Email && Message)) {
+                $("#DivErrorMsg").addClass("Form_ErrorMessge")
+                $("#DivErrorMsg").append("Please fill the mandatory fields!")
+                $("#DivErrorMsg").css("Form_ErrorMessge");
+            }
+            return (Name && Email && Message);
+
+        }
+    </script>
+
+       <!-- SEO TAGS START HERE --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118957392-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118957392-3');
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body  ng-controller="ContactUsViewController">
+    <div class="page-wrapper">
+
+   
+       
+        <nav class="social">
+            <ul>
+                <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i>Whatsapp</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-f"></i>Facebook</a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></li>
+                <li><a href="https://youtube.com/" target="_blank"><i class="fa fa-youtube"></i>Youtube</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i>Instagram</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+                <li><a href="https://offerabudhabi.com" target="_blank"><i class="fa fa-map-marker"></i>Location</a></li>
+                <li><a href="mailto:offer@offerabudhabi.com" target="_blank" title="offer@offerabudhabi.com"><i class="fa fa-envelope-o"></i>Email Us</a></li>
+            </ul>
+        </nav>
+
+<!-- Main Header -->
+ <header class="main-header">
+            <!-- Header Upper -->
+             <div class="container">
+                <div class="row row-eq-height">
+                    <div class="col-lg-4 col-md-4 text-center logo">
+                        <a href="#" class="Main_Root_Url">
+                            <img class="img-responsive" src="img/icon/logo.PNG" alt="offer in UAE"></a>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="top-contact-details">
+                            <div class="row mt-15">
+                                <div class="col-md-7 col-sm-7 col-xs-12" style="padding: 0px;">
+                                    <div class="col-md-7 col-sm-7 col-xs-6 border-r">
+                                        
+                                    </div>
+
+                                    <div class="col-md-5 col-sm-5 col-xs-6 border-r">
+                                        <div class="clearfix">
+                                            <a href="">
+                                                <img class="img-responsive pull-left t-contact-img" src="" alt="">
+                                                <div class="t-contact-info ubuntu pull-left">
+                                                    <span class="fz-14 gray-999"> </span>
+                                                    <span class="fz-13"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-xs-12">
+                                    <div class="clearfix" style="padding-top: 10px;">
+                                        <script>
+                                            (function () {
+                                                var cx = '015378931779927928287:eoicpk2lo4i';
+                                                var gcse = document.createElement('script');
+                                                gcse.type = 'text/javascript';
+                                                gcse.async = true;
+                                                gcse.src = '../cse.google.com/cse07b6.html?cx=' + cx;
+                                                var s = document.getElementsByTagName('script')[0];
+                                                s.parentNode.insertBefore(gcse, s);
+                                            })();
+                                        </script>
+                                        <gcse:search></gcse:search>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Top End -->
+            <div class="main-nav mt-20 clearfix">
+                <div class="container">
+                    <div class="col-lg-offset-3 col-lg-9 col-md-offset-3 col-md-9 no-padding">
+                        <nav class="navbar">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse no-margin no-padding Main_LinkCtr">
+                                <ul class="nav navbar-nav">
+                                     <li class=""><a href="IndexMainpage.html">HOME</a>
+                                      
+                                    </li>
+                                    <li class=""><a href="#" name="DepartmentsFacilities">ABOUT US</a>
+                                        
+                                    </li>
+                                    <li><a href="#" name="Doctors">A</a></li>
+                                    <li><a href="#" name="Packages">B</a></li>
+                                    <li><a href="#" name="HealthBlog">C</a></li>
+                                    <li><a href="#"  name="News">D</a></li>
+                                    <li class="">
+                                        <a href="#" name="Career">E</a>
+                                       
+                                    </li>
+                                    <li><a href="ContactUs.html" name="Contact">CONTACT</a></li>
+                                </ul>
+                            </div>
+                            <!--/.nav-collapse -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="header-upper">
+                <div class="auto-container clearfix">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#" class="Main_Root_Url"> <img src="img/icon/logo.PNG"  alt="OFFER UAE"></a>
+                    </div>
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                        
+                        <!--<a href="" class="theme-btn btn-donate" data-toggle="modal" data-target="#donate-popup"><i class="fa fa-map-marker"></i>Route Map</a>-->
+                        <nav class="main-menu">
+                            <div class="navbar-collapse collapse clearfix Main_LinkCtr">
+                                <ul class="navigation">
+                                     <li class=""><a href="IndexMainpage.html">Home</a>
+                
+                                    </li>
+                                    <li class=""><a href="#" name="DepartmentsFacilities">About</a>
+                                        
+                                           
+                                    </li>
+                                    <li><a href="#" name="Doctors">A</a></li>
+                                    <li><a href="#" name="Packages">B</a></li>
+                                    <li><a href="#" name="HealthBlog">C</a></li>
+                                    <li><a href="#"  name="News">D</a></li>
+                                    <li class="">
+                                        <a href="#" name="Career">E</a>
+                                   
+                                    </li>
+                                    <li><a href="ContactUs.html" name="Contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Main Header -->
+<!--End Main Header -->
+   
+        <!--Main Slider-->
+        <!--Page Title-->
+        <section class="page-title" style="background-image: url(img/banner/contact-us-banner.jpg);">
+            <div class="auto-container">
+                <div class="sec-title">
+                    <h1 class="language" lang="en">Contact <span class="normal-font">Us</span></h1>
+                    <div class="bread-crumb language" lang="en"><a href="#" class="Main_Root_Url">Home</a> / <a href="#" class="current">Contact Us</a></div>
+                    <h2 class="language" lang="ar"> اتصل بنا</h2>
+                    <div class="bread-crumb language" lang="ar"><a href="#" class="Main_Root_Url">الصفحة الرئيسية </a> / <a href="#" class="current">اتصل بنا</a></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Default Section / Other Info-->
+        <section class="default-section other-info padd-top-30">
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!--Info Column-->
+                    <div class="column info-column col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                        <article class="inner-box">
+                            
+                            <ul class="info-box margin-bott-30">
+                                <li>
+                                    <span class="icon flaticon-location"></span><strong>Address</strong>
+                                   OFFER ABUDHABI<br />
+                                   Abu Dhabi, U.A.E.
+                                </li>
+                                <li><span class="icon flaticon-technology-5"></span><strong>Appointments & General Enquiries</strong>
+                                   
+                                </li>
+                                <li><span class="icon flaticon-interface-1"></span><strong>Email</strong> <a href="mailto:enquiry@offerabudhabi.com">enquiry@offerabudhabi.com</a></li>
+                               
+                                
+                            </ul>
+                            <h3 class="margin-bott-20"></h3>
+                            <div class="text margin-bott-40">
+                                YOU ARE A RETAIL OUTLET(S) / STORE AND YOU WANT TO LIST YOUR SALE/OFFER ?<br />
+                                <strong>Please fill in the form below and Our representative will get in touch with you shortly..</strong><br />
+                                <a href="mailto:"> </a>  <strong> </strong>  <a href="tel:"></a>
+                            </div>
+                        </article>
+                    </div>
+
+                   
+        <div class="BottomSpliter  col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+
+                </div>
+                <div class="row clearfix">
+
+                    <!--Info Column-->
+
+                    
+
+
+                </div>
+            </div>
+        </section>
+
+        <!--Contact Section-->
+        <section class="contact-section no-padd-top">
+            <div class="auto-container">
+
+                <div class="row clearfix">
+
+               
+
+                    <!--Form Column-->
+                    
+                    <div class="column form-column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="language" lang="en">Send Message</h2>
+                        <h2 class="language" lang="ar"> ارسل رسالة</h2>
+                        <!--COntact Form-->
+                        <form id="submit-form" action="">
+
+
+
+
+                            
+
+                            <div class="inner-box">
+                                    <div class="row clearfix">
+                                        <!--Form Group-->
+                                        <div class="form-portlet">
+                                        <div class="form-group col-md-6 col-xs-12">
+                                            
+                                            <div class="field-label language" lang="en">Name<span class="required">*</span></div>
+                                            <div class="field-label language" lang="ar">الإسم<span class="required">*</span></div>
+                                            <div class="fields">
+                                                <input name="txtName" type="text" id="txtName" placeholder="Enter Your Name" />
+                                            </div>
+                                        </div>
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-6 col-xs-12">
+                                            <div class="field-label language" lang="en">Email<span class="required">*</span></div>
+                                            <div class="field-label language" lang="ar"> البريد الإلكتروني<span class="required">*</span></div>
+                                            <div class="fields">
+                                            <input name="CNT_txtEmail" type="text" id="CNT_txtEmail" name="email" value="" placeholder="Your Email" />
+                                                </div>
+                                        </div>
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-12 col-xs-12">
+                                            <div class="field-label language" lang="en">Message<span class="required">*</span></div>
+                                            <div class="field-label language" lang="ar"> الرسالة<span class="required">*</span></div>
+                                            <div class="fields">
+                                            <textarea name="txtMessage" id="txtMessage" style="height:160px" placeholder="Message"></textarea>
+                                                </div>
+                                        </div>
+
+                                        <!--Form Group-->
+                                        <div class="form-group col-md-12 col-xs-12">
+                                            <div class="text-right">
+                                                <input type="submit" name="btnSubmit" value="Send" onclick="return validatePage();" id="btnSubmit" class="theme-btn btn-style-two" />
+                                            </div>
+                                        </div>                                            
+                                        </div>
+                                    </div>
+                            </div>
+
+
+                            <script>
+                                $("#submit-form").submit((e)=>{
+                                e.preventDefault()
+                                $.ajax({
+                                url:"https://script.google.com/macros/s/AKfycbzAYaB5yEO9do81-ViEOZ-8C-2mrhQXC87dpjh2nE6HJZrF0Fp6dNnmWA/exec",
+                                data:$("#submit-form").serialize(),
+                                method:"post",
+                                success:function (response){
+                                alert("Form submitted successfully")
+                                window.location.reload()
+                                //window.location.href="https://google.com"
+                                },
+                                error:function (err){
+                                alert("Something Error")
+                                
+                                }
+                                })
+                                })
+                                </script>
+                            <!--COntact Form-->
+                        
+                            
+
+
+</form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <footer class="main-footer" style="background-image: url(images/background/footer-bg.jpg);">
+
+            <!--Footer Upper-->
+            <div class="footer-upper">
+                <div class="auto-container">
+                    <div class="row clearfix">
+        
+                        <!--Two 4th column-->
+                        <div class="col-md-3 col-sm-12 col-xs-12 column">
+                            <div class="row clearfix">
+                                <div class="footer-widget news-widget">
+                                    <h2>Contact Details</h2>
+                                    <div>
+                                        <ul class="contact-info">
+                                            <li>
+                                                <span class="icon fa fa-map-marker"></span>
+                                                BIG OFFER<br>
+                                               
+                                                Abu Dhabi, U.A.E
+                                            </li>
+                                            
+                                            <li><span class="icon fa fa-envelope-o"></span>offer@offerabudhabi.com </li>
+                                        </ul>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+                        <!--Two 4th column End-->
+        
+                        <!--Two 4th column-->
+                        <div class="col-md-9 col-sm-12 col-xs-12 column">
+                            <div class="row clearfix">
+                                <!--Footer Column-->
+                                <div class="footer-widget links-widget">
+                                    <h2>Quick Links</h2>
+                                    <ul class="col-md-3 col-sm-12 col-xs-12 column" style="margin-bottom: 20px;">
+                                        <li><a href="IndexMainpage.html" class="Main_Root_Url">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">A</a></li>
+                                        <li><a href="#">B</a></li>
+                                        <li><a href="#">C</a></li>
+                                        <li><a href="#">D</a></li>
+                                        <li><a href="#">E</a></li>
+                                        <li><a href="ContactUs.html">Contact</a></li>
+                                    </ul>
+                                   
+        
+                                </div>
+                            </div>
+                        </div>
+                        <!--Two 4th column End-->
+        
+                    </div>
+        
+                </div>
+            </div>
+        
+            <!--Footer Bottom-->
+            <div class="footer-bottom">
+                <div class="auto-container clearfix">
+                    <!--Copyright-->
+                    <div class="copyright text-left pull-left">
+                        &copy; OFFER IN ABUDHABI | Designed and developed By 
+                            <a style="margin: 0px 10px 0px 0px;" target="_blank" rel="nofollow"  href="#">BIG OFFER UAE</a> 
+                            <a style="margin: 0px 10px;" href="#"></a> 
+                            <a style="margin: 0px 10px;" href="#"></a> 
+                    </div>
+                    <div class="social-links-two clearfix  pull-right">
+                        <a href="https://web.whatsapp.com/" target="_blank" class="facebook img-circle"><span class="fa fa-whatsapp"></span></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="facebook img-circle"><span class="fa fa-facebook-f"></span></a>
+                        <a href="https://twitter.com/" target="_blank" class="twitter img-circle"><span class="fa fa-twitter"></span></a>
+                        <a href="https://" target="_blank" class="linkedin img-circle"><span class="fa fa-youtube"></span></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="twitter img-circle"><span class="fa fa-instagram"></span></a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="linkedin img-circle"><span class="fa fa-linkedin"></span></a>
+                        <a href="https://" target="_blank" class="linkedin img-circle"><span class="fa fa-map-marker"></span></a>
+                        <a href="https://" target="_blank" class="linkedin img-circle"><span class="fa fa-envelope-o"></span></a>
+                    </div>
+                </div>
+            </div>
+        
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/sweetalert.min.js"></script>
+        <link href="css/sweetalert.css" rel="stylesheet" />
+        
+        <script src="../cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+        
+            
+        </div>
+        <!--End pagewrapper-->
+        
+        
+        <!--Scroll to top-->
+        <div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="fa fa-long-arrow-up"></span></div>
+        
+        
+        <!--Donate Popup-->
+        
+        <!-- /.modal -->
+        
+        <script src="js/jquery.js"></script> 
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/revolution.min.js"></script>
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/jquery.fancybox-media.js"></script>
+        <script src="js/owl.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/script.js"></script>
+            <script src="js/jquery-3.2.1.min.js" ></script>
+            <script src="js/jquery.extensions.js" ></script> 
+            <script src="js/angular.min.js" ></script>
+            <script src="js/angular-filter.js"></script>
+            <script>
+                var app = angular.module("LinkServiceModule", ['angular.filter']);
+        
+                app.controller("LinkServiceController", function ($scope, $http) {
+        
+                    $.ajax({
+                        url: 'Services.aspx/GetAllCommonService',
+                        data: "{'Lang':'" + localStorage.getItem("lang") + "'}",
+                        async: false,
+                        type: 'POST',
+                        contentType: 'application/json; charset=utf-8',
+                        dataType: "json",
+                        success: function (data) {
+                            var jsonObj = JSON.parse(data.d);
+                            $scope.Serviceslink = jsonObj;
+        
+                        }
+                    })
+                    $.ajax({
+                        url: 'Doctors.aspx/GetAllDoctors',
+                        async: false,
+                        type: 'POST',
+                        contentType: 'application/json; charset=utf-8',
+                        dataType: "json",
+                        success: function (data) {
+                            var jsonObj = JSON.parse(data.d);
+                            $scope.Doctorslink = jsonObj;
+        
+                        }
+                    })
+        
+                });
+                app.filter('spaceless', function () {
+                    return function (input) {
+                        if (input) {
+                            return (((input.replace(/-/g, '~')).replace(/:/g, '_')).replace(/\s+/g, '-')).replace(/&/g, 'and');
+                        }
+                    }
+                });
+            </script>
+        </body>
+        
+        
+        </html>
