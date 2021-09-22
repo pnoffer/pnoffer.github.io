@@ -1,0 +1,125 @@
+.mobile #whatsAppHeader {
+    border-radius: 50px;
+    background: #25d366;
+    float: right;
+    position: fixed;
+    left: 20px;
+    bottom: 17px;
+    padding: 8px 10px;
+    margin-right: -10px;
+    z-index: 9999;
+    height: 56px;
+    width: 56px;
+}
+.mobile #whatsAppHeader a {
+    color: #ffffff;
+}
+.mobile #whatsAppHeader .fa-whatsapp {
+    font-size: 32px;
+    padding: 3px 5px;
+
+}
+.mobile #whatsAppHeader .fa-whatsapp:before {
+    content: "\f232";
+}
+
+div[data-widget-id="2137995"] .text-content {
+    background-color: white;
+    opacity: 0.95;
+    padding: 30px !important;
+}
+
+.mobile div[data-widget-id="2137994"] p{
+    background-color: #a5acc6c9 !important;
+    color: #fff !important;
+    height: 100px;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+}
+.mobile div[data-widget-id="2137994"] button.slick-prev.slick-arrow{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+ }
+.mobile div[data-widget-id="2137994"] button.slick-next.slick-arrow {
+    position: absolute;
+    top: 100%;
+    right: 40%!important;
+}
+.mobile div[data-widget-id="2137994"] button.slick-next.slick-arrow:before{
+    content:"\f105";
+    border:1px solid grey;
+    padding:5px;
+    padding-right:10px;
+    padding-left:10px;
+}
+.mobile div[data-widget-id="2137994"] button.slick-prev.slick-arrow:before{
+    content:"\f104";
+    border:1px solid grey;
+    padding:5px;
+    padding-right:10px;
+    padding-left:10px;
+}
+.mobile .wt-image-text-slider[data-widget-id="2138004"] .slick-slide {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left:10px;
+    margin-right:10px;
+    padding:3px;
+}
+
+
+.mobile.parent-hotel.for-homepage .widget-wrapper.wt1tb[data-widget-id="2137991"]
+ {
+    display:none !important
+ }
+
+div#livprop_modal-header{
+    background-color: #005AAB !important;
+}
+
+#whatsAppHeader{
+    z-index: 1000;
+    position: fixed;
+    bottom: 15px;
+    left:15px;
+    background: #25d366;
+    height: 33px;
+    width: 39px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    font-size: 28px;
+    text-align: center;
+    line-height: 50px;
+}
+#whatsAppHeader a{
+    color: white;
+}
+.fa-whatsapp {
+    font-weight: bold;
+}
+.mobile #whatsAppHeader {
+    border-radius: 50px;
+    background: #25d366;
+    float: right;
+    position: fixed;
+    right: 24px;
+    bottom: 75px;
+    padding: 8px 10px;
+    margin-right: -10px;
+    z-index: 9999;
+    line-height: unset;
+}
+.mobile #whatsAppHeader a {
+    color: #ffffff;
+}
+.mobile #whatsAppHeader .fa-whatsapp {
+    font-size: 30px;
+    /*padding: 3px 5px;*/
+}
+.mobile .fa-whatsapp:before {
+    content: "\f232";
+}
+
