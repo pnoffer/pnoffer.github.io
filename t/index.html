@@ -45,26 +45,7 @@
     <!--Google Analytics-->
     <script src="js/googleAnalytics.js"></script> 
      
-    <script>
-        // Added By PREM On 16-12-2021 Reason Security Issue
-        function noRightMouseClick() {
-            return false;
-        }
-        function mousehandler(e) {
-            var myevent = event;
-            var eventbutton = myevent.button;
-            if (eventbutton == 2) return false;
-        }
-        document.oncontextmenu = noRightMouseClick;
-        document.onmousedown = mousehandler;
-        document.onmouseup = mousehandler;
-        document.onkeydown = function (e) {
-            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117 || e.keycode === 17 || e.keycode === 85)) {//ctrl+u Alt+c, Alt+v will also be disabled sadly.
-                //  alert('not allowed');
-            }
-            return false;
-        };
-    </script>    
+   
 
 <title>
 taxo
@@ -232,10 +213,10 @@ taxo
         <div class="tickerItems">
             <img src="img/t.jpeg" width="38" height="55" />
             <p>
-                texo
+                taxo
                 <br>
                 Transport App<br>
-                <span>texo </span>
+                <span>taxo </span>
             </p>
         </div>
     </a>
